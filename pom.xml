@@ -10,8 +10,10 @@
     <name>Dust4Java Engine</name>
     <url>http://maven.apache.org</url>
 
+    <!-- mvn -DaltDeploymentRepository=snapshot-repo::default::file:../AssuredLabor-mvn-repo/snapshots clean deploy -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <altDeploymentRepository>snapshot-repo::default::file:../AssuredLabor-mvn-repo/snapshots</altDeploymentRepository>
     </properties>
 
     <dependencies>

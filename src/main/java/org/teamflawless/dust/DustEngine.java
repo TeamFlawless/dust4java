@@ -30,7 +30,7 @@ public class DustEngine {
 
             globalScope = jsCtx.initStandardObjects();
 
-            @Cleanup InputStream dustStream = DustEngineTest.class.getResourceAsStream(DUST_JS_FILENAME);
+            @Cleanup InputStream dustStream = DustEngine.class.getResourceAsStream(DUST_JS_FILENAME);
             if (dustStream != null) {
                 Reader dustReader = new InputStreamReader(dustStream, "UTF-8");
                 jsCtx.evaluateReader(globalScope, dustReader, DUST_JS_FILENAME, 0, null);
