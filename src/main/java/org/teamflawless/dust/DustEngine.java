@@ -117,13 +117,13 @@ public class DustEngine {
         return (result.toString() == "true");
     }
     
-    public void render(String name, String json, Writer writer) {
+    public void render(String name, String jsonContext, Writer writer) {
         Context jsCtx = Context.enter();
         
         Scriptable renderScope = jsCtx.newObject(globalScope);
         renderScope.setParentScope(globalScope);
         renderScope.put("writer", renderScope, writer);
-        renderScope.put("json", renderScope, json);
+        renderScope.put("json", renderScope, jsonContext);
         renderScope.put("name", renderScope, name);
 
         String renderScript = ("{   dust.render( name,  JSON.parse(json) , function( err, data) { if(err) { writer.write(err);} else { writer.write( data );}  } );   }");
