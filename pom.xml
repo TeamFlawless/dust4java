@@ -8,12 +8,32 @@
     <packaging>jar</packaging>
 
     <name>Dust4Java Engine</name>
-    <url>http://maven.apache.org</url>
+    <url>http://teamflawless.github.com/dust4java</url>
 
-    <!-- mvn -DaltDeploymentRepository=snapshot-repo::default::file:../AssuredLabor-mvn-repo/snapshots clean deploy -->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/TeamFlawless/dust4java</url>
+        <connection>scm:git:git://github.com/TeamFlawless/dust4java.git</connection>
+        <developerConnection>scm:git:https://github.com/TeamFlawless/dust4java.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>jpollak</id>
+            <name>Joshua Chaitin-Pollak</name>
+            <email>josh@teamflawless.org</email>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <altDeploymentRepository>snapshot-repo::default::file:../AssuredLabor-mvn-repo/snapshots</altDeploymentRepository>
     </properties>
 
     <dependencies>
