@@ -21,7 +21,7 @@
     <scm>
         <url>https://github.com/TeamFlawless/dust4java</url>
         <connection>scm:git:git://github.com/TeamFlawless/dust4java.git</connection>
-        <developerConnection>scm:git:https://github.com/TeamFlawless/dust4java.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:TeamFlawless/dust4java.git</developerConnection>
     </scm>
 
     <developers>
